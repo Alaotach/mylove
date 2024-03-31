@@ -1,0 +1,55 @@
+<!--
+  Hit RUN to see this project in action!
+  
+  This project will auto-refresh as you edit the HTML, CSS and JS. See README.md for more info (including how to disable auto-refresh and install packages).
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Love!</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    #hiddenDiv {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+    <script type="module" src="script.js"></script>
+  <script>
+    function toggleDiv() {
+      var div = document.getElementById("hiddenDiv");
+      if (div.style.display === "none") {
+        div.style.display = "block";
+      } else {
+        div.style.display = "none";
+      }
+    }
+    
+  </script>
+  <main>
+
+    <div class="container texthome">
+      <h3>Ok Bro here you go click on the button below!</h3>
+      
+    <button onclick="toggleDiv()" class="custom-btn btn-11">Show ME!!</button>
+      <div id="hiddenDiv">
+        <video class="video" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    </div>
+  </main>
+
+
+
+</body>
+
+</html>
